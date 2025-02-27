@@ -1,0 +1,14 @@
+site:
+  title: "P2PMusicJam"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/p2pMusicJam.js"
+      api: "build/libs/p2pMusicJam.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/p2pMusicJam.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
