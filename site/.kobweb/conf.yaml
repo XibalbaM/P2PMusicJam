@@ -1,5 +1,6 @@
 site:
   title: "P2PMusicJam"
+  basePath: "P2PMusicJam"
 
 server:
   files:
