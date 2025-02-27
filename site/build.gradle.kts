@@ -28,8 +28,13 @@ kotlin {
             implementation(libs.kobweb.core)
             implementation(libs.kobweb.silk)
             implementation(libs.silk.icons.fa)
-            // implementation(libs.kobwebx.markdown)
-            implementation(project(":worker"))
+            implementation("com.shepeliev:webrtc-kmp:0.125.9")
+        }
+    }
+
+    js {
+        compilerOptions {
+            optIn.add("kotlin.io.encoding.ExperimentalEncodingApi")
         }
     }
 }
